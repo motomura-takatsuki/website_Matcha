@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抹茶ラテ専門店</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 画像のプリロード -->
+    <link rel="preload" as="image" href="/images/hero.jpg">
+    <link rel="preload" as="image" href="/images/about.jpg">
+    <link rel="preload" as="image" href="/images/menu1.jpg">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/images/logo.png" alt="抹茶ラテ専門店" width="150" height="50">
+            </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="fade-in">
+            <div class="hero-content">
+                <h1>抹茶ラテ専門店</h1>
+                <p>最高級の抹茶を使用した、こだわりの抹茶ラテをお届けします</p>
+            </div>
+            <div class="hero-image">
+                <img src="/images/hero.jpg" alt="抹茶ラテ" width="600" height="400" loading="eager">
+            </div>
+        </section>
+
+        <section id="about" class="fade-in">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>私たちは、最高級の抹茶を使用した抹茶ラテを提供する専門店です。</p>
+                    <p>移動販売車で各地を巡り、多くのお客様に抹茶の美味しさをお届けしています。</p>
+                </div>
+                <div class="about-image">
+                    <img src="/images/about.jpg" alt="店舗" width="400" height="300" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="fade-in">
+            <h2>Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="/images/menu1.jpg" alt="抹茶ラテ" width="300" height="200" loading="lazy">
+                    <h3>抹茶ラテ</h3>
+                    <p>¥500</p>
+                </div>
+                <div class="menu-item">
+                    <img src="/images/menu2.jpg" alt="抹茶スムージー" width="300" height="200" loading="lazy">
+                    <h3>抹茶スムージー</h3>
+                    <p>¥600</p>
+                </div>
+                <div class="menu-item">
+                    <img src="/images/menu3.jpg" alt="抹茶フラペチーノ" width="300" height="200" loading="lazy">
+                    <h3>抹茶フラペチーノ</h3>
+                    <p>¥550</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="schedule" class="fade-in">
+            <h2>Schedule</h2>
+            <div class="schedule-grid">
+                <div class="schedule-item">
+                    <img src="/images/location1.jpg" alt="渋谷" width="300" height="200" loading="lazy">
+                    <h3>渋谷</h3>
+                    <p>毎週土曜日 12:00-18:00</p>
+                </div>
+                <div class="schedule-item">
+                    <img src="/images/location2.jpg" alt="原宿" width="300" height="200" loading="lazy">
+                    <h3>原宿</h3>
+                    <p>毎週日曜日 11:00-17:00</p>
+                </div>
+                <div class="schedule-item">
+                    <img src="/images/location3.jpg" alt="表参道" width="300" height="200" loading="lazy">
+                    <h3>表参道</h3>
+                    <p>毎週金曜日 13:00-19:00</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="fade-in">
+            <h2>Contact</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">お名前</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">メッセージ</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">送信</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 抹茶ラテ専門店 All Rights Reserved.</p>
+    </footer>
+
+    <script src="/js/script.js" defer></script>
+</body>
+</html> 
